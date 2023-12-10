@@ -101,37 +101,41 @@
 # 	printWords(number, n)
 
 
-def generateWords(number):
-    if not number:
-        return []
+# def generateWords(number):
+#     if not number:
+#         return []
 
-    hashTable = {
-        '2': 'abc',
-        '3': 'def',
-        '4': 'ghi',
-        '5': 'jkl',
-        '6': 'mno',
-        '7': 'pqrs',
-        '8': 'tuv',
-        '9': 'wxyz',
-    }
+#     hashTable = {
+#         '2': 'abc',
+#         '3': 'def',
+#         '4': 'ghi',
+#         '5': 'jkl',
+#         '6': 'mno',
+#         '7': 'pqrs',
+#         '8': 'tuv',
+#         '9': 'wxyz',
+#     }
 
-    queue = ['']
-    result = []
+#     queue = ['']
+#     result = []
 
-    while queue:
-        current_word = queue.pop(0)
-        if len(current_word) == len(number):
-            result.append(current_word)
-        else:
-            current_digit = number[len(current_word)]
-            for letter in hashTable.get(current_digit, ''):
-                queue.append(current_word + letter)
+#     while queue:
+#         current_word = queue.pop(0)
+#         if len(current_word) == len(number):
+#             result.append(current_word)
+#         else:
+#             current_digit = number[len(current_word)]
+#             for letter in hashTable.get(current_digit, ''):
+#                 queue.append(current_word + letter)
 
-    return result
+#     return result
 
-if __name__ == '__main__':
-    number = '23'
-    words = generateWords(number)
-    for word in words:
-        print(word)
+# if __name__ == '__main__':
+#     number = '23'
+#     words = generateWords(number)
+#     for word in words:
+#         print(word)
+
+
+something = str(input())
+print(something)

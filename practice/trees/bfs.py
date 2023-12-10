@@ -1,20 +1,26 @@
 from collections import deque
+
+
 class Node:
-    def __init__(self , data):
+    def __init__(self, data):
         self.data = data
         self.right = None
         self.left = None
 
-    def bfs(self , array = []):
+    def bfs(self, array=[]):
         _deque = deque()
         _deque.append(self)
 
         while _deque:
             data = _deque.popleft()
-            if data: array.append(data.data)
-            if data.left : _deque.append(data.left)
-            if data.right :_deque.append(data.right)
+            if data:
+                array.append(data.data)
+            if data.left:
+                _deque.append(data.left)
+            if data.right:
+                _deque.append(data.right)
         return array
+
 
 if __name__ == "__main__":
     root = Node(20)
