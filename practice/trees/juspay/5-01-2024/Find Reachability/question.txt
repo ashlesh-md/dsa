@@ -1,0 +1,55 @@
+
+Find Reachability
+
+Problem Description:
+JS newbie “A” wants to check if he can reach out to a React expert “B” using his network of React developers. If he can, then return 1; else, return 0.
+
+INPUT FORMAT:
+
+Total members in React Developer Community = N
+
+MemberId1 = N1
+
+MemberId2 = N2
+
+MemberId3 = N3
+
+MemberIdN = Nn
+
+Total possible edges = E
+
+<follower 1 (member ID)> <following 1 (member ID)> = u1, v1
+
+<follower 2 (member ID)> <following 2 (member ID)> = u2, v2
+
+……………
+
+<follower N> <following N> = un, vn
+
+Follower = A
+
+Following = B
+
+OUTPUT FORMAT:
+
+If A can reach B, then output is 1; else, 0.
+Sample Input:
+
+Copy code
+4
+2
+5
+7
+9
+4
+2 9
+7 2
+7 9
+9 5
+7
+9
+Sample Output:
+
+Copy code
+1
+Disclaimer: The solution file for this question is not updated, and hence, you cannot use custom input and output options for this question.

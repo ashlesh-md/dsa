@@ -1,0 +1,50 @@
+Question 2
+
+Problem Description:
+A Nagging React newbie “B” is constantly troubling React expert “A”. React Expert “A” needs to know the minimum set of people following him he needs to remove from his network to stop “B” from reaching out to him.
+
+INPUT FORMAT:
+
+Total Members in UI Friend Network = N
+
+MemberId1 = N1
+
+MemberId2 = N2
+
+MemberId3 = N3
+
+MemberIdN = Nn
+
+Total Possible Edges = E
+
+<Follower 1> <Following 1>
+<Follower 2> <Following 2>
+<Follower N> <Following N>
+Follower = A
+
+Following = B
+
+OUTPUT FORMAT:
+
+Set of memberId “A” needs to block
+Sample Input:
+
+Copy code
+4
+2
+5
+7
+9
+4
+2 9
+7 2
+7 9
+9 5
+7
+9
+Sample Output:
+
+Copy code
+2 7
+Disclaimer: The solution file for this question is not updated, and hence, you cannot use custom input and output options for this question.
+https://drive.google.com/drive/folders/1AtKBabGpFkTiGcdZ1O3rnOXgP0DsFY2l

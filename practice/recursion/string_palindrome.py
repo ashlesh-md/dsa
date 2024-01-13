@@ -6,7 +6,7 @@
 #     return reverse(string[1:]) + string[0]
 
 # TC : O(N / 2)
-# SC : O(N / 2) Internal Stac
+# SC : O(N / 2) Internal Stack
 
 def reverse(string , index = 0):
     if index >= len(string) // 2:
